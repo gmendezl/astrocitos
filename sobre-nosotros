@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros - Astrocitos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body class="bg-white">
+
+    <!-- Navbar -->
+    <header class="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="text-3xl font-['Pacifico'] text-primary">Astrocitos</a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-primary transition-colors">Inicio</a>
+                    <a href="sobre-nosotros.html" class="text-primary font-semibold">Sobre Nosotros</a>
+                    <a href="profesionales.html" class="text-gray-700 hover:text-primary transition-colors">Profesionales</a>
+                    <a href="blog.html" class="text-gray-700 hover:text-primary transition-colors">Blog</a>
+                    <a href="contacto.html" class="text-gray-700 hover:text-primary transition-colors">Contacto</a>
+                    <button class="bg-primary text-white px-6 py-2 !rounded-lg hover:bg-primary/90 transition-colors">
+                        Agendar Cita
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-24 bg-primary text-white text-center py-16">
+        <div class="container mx-auto px-6">
+            <h1 class="text-5xl font-bold mb-4">Sobre Nosotros</h1>
+            <p class="text-lg max-w-2xl mx-auto">
+                En Astrocitos, somos un equipo especializado en neurodesarrollo infantil, comprometidos con el bienestar de cada niño y su familia.
+            </p>
+        </div>
+    </section>
+
+    <!-- Misión, Visión y Valores -->
+    <section class="py-24 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-12 text-center">
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <i class="ri-lightbulb-line text-5xl text-primary mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Nuestra Misión</h3>
+                    <p class="text-gray-600">
+                        Brindar atención especializada en neurodesarrollo para mejorar la calidad de vida de niños, niñas y adolescentes.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <i class="ri-eye-line text-5xl text-primary mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Nuestra Visión</h3>
+                    <p class="text-gray-600">
+                        Ser un referente en el ámbito del neurodesarrollo y la educación inclusiva en toda la región.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <i class="ri-heart-line text-5xl text-primary mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Nuestros Valores</h3>
+                    <p class="text-gray-600">
+                        Compromiso, empatía, innovación y excelencia en cada una de nuestras intervenciones.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nuestro Equipo -->
+    <section class="py-24">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">Nuestro Equipo</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://public.readdy.ai/ai/img_res/28afa7917eb0582db314a2e7b6197c9f.jpg" class="w-full h-64 object-cover" alt="Dra. Isabella Martínez">
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-semibold">Dra. Isabella Martínez</h3>
+                        <p class="text-gray-600">Neuropsicóloga Infantil</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://public.readdy.ai/ai/img_res/08d7465e4067cbac1c8f75044e0e1132.jpg" class="w-full h-64 object-cover" alt="Dr. Carlos Ruiz">
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-semibold">Dr. Carlos Ruiz</h3>
+                        <p class="text-gray-600">Neuropediatra</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://public.readdy.ai/ai/img_res/0bee66de060b88341042155ef0601af5.jpg" class="w-full h-64 object-cover" alt="Lic. Ana García">
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-semibold">Lic. Ana García</h3>
+                        <p class="text-gray-600">Terapeuta Ocupacional</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Contacto -->
+    <section class="py-24 bg-primary text-white text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-6">¿Quieres saber más sobre nuestro trabajo?</h2>
+            <p class="text-lg mb-8">Contáctanos y agenda una cita con nuestro equipo de expertos.</p>
+            <a href="contacto.html" class="bg-white text-primary px-8 py-3 !rounded-lg hover:bg-gray-200 transition-colors text-lg">
+                Contactar Ahora
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 text-center">
+        <p>&copy; 2025 Astrocitos. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
