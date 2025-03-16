@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Astrocitos - Centro Especializado en Neurodesarrollo</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script>
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+primary: '#57B5E7',
+secondary: '#8DD3C7'
+},
+borderRadius: {
+'none': '0px',
+'sm': '4px',
+DEFAULT: '8px',
+'md': '12px',
+'lg': '16px',
+'xl': '20px',
+'2xl': '24px',
+'3xl': '32px',
+'full': '9999px',
+'button': '8px'
+}
+}
+}
+}
+</script>
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+.scroll-smooth { scroll-behavior: smooth; }
+</style>
+</head>
+<body class="bg-white">
+<header class="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
+<nav class="container mx-auto px-6 py-4">
+<div class="flex items-center justify-between">
+<a href="#" class="text-3xl font-['Pacifico'] text-primary">Astrocitos</a>
+<div class="hidden md:flex items-center space-x-8">
+<a href="#inicio" class="text-gray-700 hover:text-primary transition-colors">Inicio</a>
+<a href="#sobre-nosotros" class="text-gray-700 hover:text-primary transition-colors">Sobre Nosotros</a>
+<a href="#profesionales" class="text-gray-700 hover:text-primary transition-colors">Profesionales</a>
+<a href="#blog" class="text-gray-700 hover:text-primary transition-colors">Blog</a>
+<a href="#reglamentos" class="text-gray-700 hover:text-primary transition-colors">Reglamentos</a>
+<button class="bg-primary text-white px-6 py-2 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">
+Agendar Cita
+</button>
+</div>
+</div>
+</nav>
+</header>
+<main>
+<section id="inicio" class="pt-24 relative overflow-hidden min-h-screen flex items-center" style="background-image: url('https://public.readdy.ai/ai/img_res/dd5ac9ad00063a73b4a750b04df35e15.jpg'); background-size: cover; background-position: center;">
+<div class="absolute inset-0 bg-white/80"></div>
+<div class="container mx-auto px-6 py-24 relative">
+<div class="max-w-3xl">
+<h1 class="text-5xl font-bold text-gray-900 mb-6">
+Expertos en Neurodesarrollo Infantil
+</h1>
+<p class="text-xl text-gray-700 mb-8">
+En Astrocitos, nos dedicamos a entender y potenciar el desarrollo neurológico de cada niño, ofreciendo atención especializada y personalizada para un futuro más brillante.
+</p>
+<div class="flex gap-4">
+<button class="bg-primary text-white px-8 py-3 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap text-lg">
+Conoce Más
+</button>
+<button class="border-2 border-primary text-primary px-8 py-3 !rounded-button hover:bg-primary/10 transition-colors whitespace-nowrap text-lg">
+Contactar
+</button>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-gray-50">
+<div class="container mx-auto px-6">
+<h2 class="text-3xl font-bold text-center text-gray-900 mb-16">Nuestros Servicios</h2>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+<div class="w-16 h-16 flex items-center justify-center bg-primary/10 rounded-full mb-6">
+<i class="ri-brain-line text-primary text-2xl"></i>
+</div>
+<h3 class="text-xl font-semibold mb-4">Evaluación Neuropsicológica</h3>
+<p class="text-gray-600">Evaluación completa del desarrollo cognitivo y comportamental para identificar fortalezas y áreas de mejora.</p>
+</div>
+<div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+<div class="w-16 h-16 flex items-center justify-center bg-primary/10 rounded-full mb-6">
+<i class="ri-mental-health-line text-primary text-2xl"></i>
+</div>
+<h3 class="text-xl font-semibold mb-4">Terapia del Lenguaje</h3>
+<p class="text-gray-600">Intervención especializada para mejorar las habilidades de comunicación y expresión verbal.</p>
+</div>
+<div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+<div class="w-16 h-16 flex items-center justify-center bg-primary/10 rounded-full mb-6">
+<i class="ri-psychotherapy-line text-primary text-2xl"></i>
+</div>
+<h3 class="text-xl font-semibold mb-4">Terapia Ocupacional</h3>
+<p class="text-gray-600">Desarrollo de habilidades motoras y funcionales para la vida diaria.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="profesionales" class="py-24">
+<div class="container mx-auto px-6">
+<h2 class="text-3xl font-bold text-center text-gray-900 mb-16">Nuestro Equipo Profesional</h2>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+<img src="https://public.readdy.ai/ai/img_res/28afa7917eb0582db314a2e7b6197c9f.jpg" class="w-full h-64 object-cover" alt="Dra. Isabella Martínez">
+<div class="p-6">
+<h3 class="text-xl font-semibold mb-2">Dra. Isabella Martínez</h3>
+<p class="text-gray-600 mb-4">Neuropsicóloga Infantil</p>
+<p class="text-gray-500 text-sm mb-4">Especialista en trastornos del neurodesarrollo con más de 15 años de experiencia.</p>
+<button class="text-primary hover:text-primary/80 transition-colors flex items-center gap-2">
+Ver perfil <i class="ri-arrow-right-line"></i>
+</button>
+</div>
+</div>
+<div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+<img src="https://public.readdy.ai/ai/img_res/08d7465e4067cbac1c8f75044e0e1132.jpg" class="w-full h-64 object-cover" alt="Dr. Carlos Ruiz">
+<div class="p-6">
+<h3 class="text-xl font-semibold mb-2">Dr. Carlos Ruiz</h3>
+<p class="text-gray-600 mb-4">Neuropediatra</p>
+<p class="text-gray-500 text-sm mb-4">Especializado en diagnóstico y tratamiento de trastornos neurológicos infantiles.</p>
+<button class="text-primary hover:text-primary/80 transition-colors flex items-center gap-2">
+Ver perfil <i class="ri-arrow-right-line"></i>
+</button>
+</div>
+</div>
+<div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+<img src="https://public.readdy.ai/ai/img_res/0bee66de060b88341042155ef0601af5.jpg" class="w-full h-64 object-cover" alt="Lic. Ana García">
+<div class="p-6">
+<h3 class="text-xl font-semibold mb-2">Lic. Ana García</h3>
+<p class="text-gray-600 mb-4">Terapeuta Ocupacional</p>
+<p class="text-gray-500 text-sm mb-4">Experta en intervención temprana y desarrollo de habilidades motoras.</p>
+<button class="text-primary hover:text-primary/80 transition-colors flex items-center gap-2">
+Ver perfil <i class="ri-arrow-right-line"></i>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-gray-50">
+<div class="container mx-auto px-6">
+<h2 class="text-3xl font-bold text-center text-gray-900 mb-16">Últimas Publicaciones</h2>
+<div class="grid md:grid-cols-3 gap-8">
+<article class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+<img src="https://public.readdy.ai/ai/img_res/bb3caf69305991dd3523bba1764022e3.jpg" class="w-full h-48 object-cover" alt="Desarrollo infantil">
+<div class="p-6">
+<div class="flex gap-2 mb-4">
+<span class="text-xs bg-primary/10 text-primary px-3 py-1 rounded-full">Desarrollo</span>
+<span class="text-xs bg-secondary/10 text-secondary px-3 py-1 rounded-full">Educación</span>
+</div>
+<h3 class="text-xl font-semibold mb-2">Claves para estimular el desarrollo cognitivo</h3>
+<p class="text-gray-500 text-sm mb-4">Descubre las mejores estrategias para potenciar el desarrollo cerebral de tu hijo...</p>
+<div class="flex items-center justify-between">
+<span class="text-gray-400 text-sm">16 Mar 2025</span>
+<button class="text-primary hover:text-primary/80 transition-colors flex items-center gap-2">
+Leer más <i class="ri-arrow-right-line"></i>
+</button>
+</div>
+</div>
+</article>
+<article class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+<img src="https://public.readdy.ai/ai/img_res/d9c9051862ed0eb69f441da36894a35d.jpg" class="w-full h-48 object-cover" alt="Aprendizaje">
+<div class="p-6">
+<div class="flex gap-2 mb-4">
+<span class="text-xs bg-primary/10 text-primary px-3 py-1 rounded-full">TDAH</span>
+<span class="text-xs bg-secondary/10 text-secondary px-3 py-1 rounded-full">Aprendizaje</span>
+</div>
+<h3 class="text-xl font-semibold mb-2">Estrategias para el manejo del TDAH en el aula</h3>
+<p class="text-gray-500 text-sm mb-4">Guía práctica para docentes y padres sobre el manejo efectivo...</p>
+<div class="flex items-center justify-between">
+<span class="text-gray-400 text-sm">15 Mar 2025</span>
+<button class="text-primary hover:text-primary/80 transition-colors flex items-center gap-2">
+Leer más <i class="ri-arrow-right-line"></i>
+</button>
+</div>
+</div>
+</article>
+<article class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+<img src="https://public.readdy.ai/ai/img_res/aab020ad0331eac5512b3dc683d7cc58.jpg" class="w-full h-48 object-cover" alt="Neurociencia">
+<div class="p-6">
+<div class="flex gap-2 mb-4">
+<span class="text-xs bg-primary/10 text-primary px-3 py-1 rounded-full">Neurociencia</span>
+<span class="text-xs bg-secondary/10 text-secondary px-3 py-1 rounded-full">Investigación</span>
+</div>
+<h3 class="text-xl font-semibold mb-2">Avances en neurociencia del desarrollo</h3>
+<p class="text-gray-500 text-sm mb-4">Los últimos descubrimientos sobre el desarrollo cerebral infantil...</p>
+<div class="flex items-center justify-between">
+<span class="text-gray-400 text-sm">14 Mar 2025</span>
+<button class="text-primary hover:text-primary/80 transition-colors flex items-center gap-2">
+Leer más <i class="ri-arrow-right-line"></i>
+</button>
+</div>
+</div>
+</article>
+</div>
+</div>
+</section>
+<section class="py-24">
+<div class="container mx-auto px-6">
+<div class="bg-primary/5 rounded-2xl p-12">
+<div class="max-w-2xl mx-auto text-center">
+<h2 class="text-3xl font-bold text-gray-900 mb-6">¿Listo para comenzar?</h2>
+<p class="text-gray-600 mb-8">Agenda una consulta con nuestros especialistas y da el primer paso hacia el desarrollo óptimo de tu hijo.</p>
+<div class="flex gap-4 justify-center">
+<button class="bg-primary text-white px-8 py-3 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">
+Agendar Cita
+</button>
+<button class="bg-white text-primary px-8 py-3 !rounded-button hover:bg-gray-50 transition-colors whitespace-nowrap">
+Contactar
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-gray-900 text-white py-16">
+<div class="container mx-auto px-6">
+<div class="grid md:grid-cols-4 gap-12">
+<div>
+<a href="#" class="text-3xl font-['Pacifico'] text-white mb-6 block">Astrocitos</a>
+<p class="text-gray-400">Centro especializado en neurodesarrollo infantil, comprometidos con el futuro de nuestros niños.</p>
+</div>
+<div>
+<h4 class="text-lg font-semibold mb-6">Enlaces Rápidos</h4>
+<ul class="space-y-3">
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Inicio</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Sobre Nosotros</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Servicios</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Contacto</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-semibold mb-6">Contacto</h4>
+<ul class="space-y-3">
+<li class="flex items-center gap-3 text-gray-400">
+<i class="ri-map-pin-line"></i>
+<span>Av. Principal 123, Madrid, España</span>
+</li>
+<li class="flex items-center gap-3 text-gray-400">
+<i class="ri-phone-line"></i>
+<span>+34 912 345 678</span>
+</li>
+<li class="flex items-center gap-3 text-gray-400">
+<i class="ri-mail-line"></i>
+<span>contacto@astrocitos.es</span>
+</li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-semibold mb-6">Síguenos</h4>
+<div class="flex gap-4">
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-white/10 rounded-full hover:bg-white/20 transition-colors">
+<i class="ri-facebook-fill"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-white/10 rounded-full hover:bg-white/20 transition-colors">
+<i class="ri-instagram-line"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-white/10 rounded-full hover:bg-white/20 transition-colors">
+<i class="ri-linkedin-fill"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+<p>&copy; 2025 Astrocitos. Todos los derechos reservados.</p>
+</div>
+</div>
+</footer>
+<div class="fixed bottom-6 right-6 z-50">
+<button class="w-16 h-16 bg-green-500 text-white rounded-full shadow-lg hover:bg-green-600 transition-colors flex items-center justify-center">
+<i class="ri-whatsapp-line text-3xl"></i>
+</button>
+</div>
+</body>
+</html>
